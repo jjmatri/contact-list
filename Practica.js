@@ -8,7 +8,7 @@
  project-1 y compártelo con nosotros.  
 */
 
-const arreglo = ["jaime Salinas", "kely Pinto", "Iris Maria", "Yasmina Libreros"];
+/*const arreglo = ["jaime Salinas", "kely Pinto", "Iris Maria", "Yasmina Libreros"];
 console.log(arreglo);
 
 let a, b;
@@ -46,3 +46,64 @@ function imprimir() {
 
 console.log(imprimir());
 
+*/
+let carros = [
+  {
+    "id": 1,
+    "nombres": "jaime jose",
+    "apellido": "salinas libreros",
+    "telefono": 3425365,
+    "ubicacion": {
+		"ciudad": 'pasto',
+		"dirrecion": 'avenid 20'
+	},
+  },
+  {
+    "id": 2,
+    "nombres": "yasmina isabel",
+    "apellido": "salinas libreros",
+    "telefono": 3425365,
+    "ubicacion": {
+		"ciudad": 'bogota',
+		"dirrecion": 'circunvalar'
+	},
+  }
+  ]
+//imprimir el arreglo
+  function imprimir() {
+
+    for (let i = 0; i < carros.length; i++) {
+        console.log(carros[i]);
+
+    }
+
+}
+
+console.log(imprimir());
+
+
+
+//agregamos otro objeto
+let carro = {
+     "id": 3,
+    "nombres": "natalia jose",
+    "apellido": "salinas libreros",
+    "telefono": 3425365,
+    "ubicacion": {
+		        "ciudad": 'medeliin',
+		        "dirrecion": 'los sedro'
+	}
+}
+carros.push(carro);
+
+//console.log(carros);
+console.log(imprimir());
+
+function borra() {
+
+  carros.pop();
+
+}
+
+console.log(borra());
+console.log(imprimir());
