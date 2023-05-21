@@ -47,7 +47,7 @@ function imprimir() {
 console.log(imprimir());
 
 */
-let carros = [
+let contactos = [
   {
     "id": 1,
     "nombres": "jaime jose",
@@ -72,8 +72,8 @@ let carros = [
 //imprimir el arreglo
   function imprimir() {
 
-    for (let i = 0; i < carros.length; i++) {
-        console.log(carros[i]);
+    for (let i = 0; i < contactos.length; i++) {
+        console.log(contactos[i]);
 
     }
 
@@ -84,7 +84,7 @@ console.log(imprimir());
 
 
 //agregamos otro objeto
-let carro = {
+let contacto = {
      "id": 3,
     "nombres": "natalia jose",
     "apellido": "salinas libreros",
@@ -94,16 +94,43 @@ let carro = {
 		        "dirrecion": 'los sedro'
 	}
 }
-carros.push(carro);
+contactos.push(contacto);
 
 //console.log(carros);
-console.log(imprimir());
+imprimir();
 
-function borra() {
+//funcio actualizar
+function actualizar(a,b,c,d,f) {
 
-  carros.pop();
+    const objetoubicacion={};
+    
+    contactos[a].nombres=b;  
+    contactos[a].apellido=c;
+    contactos[a].telefono=d;
+    objetoubicacion.ciudad=f;
+    contactos[a].ubicacion=objetoubicacion;
+    console.log("Actualizamos ");
+       
+    }
+    
+    console.log(actualizar(2,"natalia judith","salinas",1234242,"monpos"));
+    imprimir();
+    
+
+
+function borra(a) {
+
+    for (const key in contactos){
+        if(contactos[key].nombres === a) {
+        //console.log('contacto ${carros[key].nombre} ${xxx[key].apellido} eliminado');
+        console.log("eliminado "+contactos[key].nombres);
+        
+          contactos.splice(key,1);
+        }
+      //carros.pop();
+      }
 
 }
 
-console.log(borra());
+console.log(borra("yasmina isabel"));
 console.log(imprimir());
