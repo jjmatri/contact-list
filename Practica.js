@@ -8,46 +8,8 @@
  project-1 y compártelo con nosotros.  
 */
 
-/*const arreglo = ["jaime Salinas", "kely Pinto", "Iris Maria", "Yasmina Libreros"];
-console.log(arreglo);
 
-let a, b;
-function agregar(a) {
-
-    arreglo.push(a);
-    //arreglo.push(b);
-}
-
-console.log(agregar("Karen Perez"));
-
-console.log(arreglo);
-//
-let pos=0;
-function borra() {
-
-    //arreglo.pop();
-    arreglo.splice(pos, 1);
-
-}
-
-console.log(borra());
-console.log(arreglo);
-
-
-//imprimir
-function imprimir() {
-
-    for (let i = 0; i < arreglo.length; i++) {
-        console.log(arreglo[i]);
-
-    }
-
-}
-
-console.log(imprimir());
-
-*/
-let carros = [
+let contactos = [
     {
       "id": 1,
       "nombres": "jaime jose",
@@ -72,8 +34,8 @@ let carros = [
   //imprimir el arreglo
   function imprimir() {
   
-    for (let i = 0; i < carros.length; i++) {
-      console.log(carros[i]);
+    for (let i = 0; i < contactos.length; i++) {
+      console.log(contactos[i]);
   
     }
   
@@ -84,7 +46,7 @@ let carros = [
   
   
   //agregamos otro objeto
-  let carro = {
+  let contacto = {
     "id": 3,
     "nombres": "natalia jose",
     "apellido": "salinas libreros",
@@ -94,7 +56,7 @@ let carros = [
       "dirrecion": 'los sedro'
     }
   }
-  carros.push(carro);
+  contactos.push(contacto);
   
   //console.log(carros);
   imprimir();
@@ -105,11 +67,11 @@ let carros = [
   
   const objetoubicacion={};
   
-    carros[a].nombres=b;  
-  carros[a].apellido=c;
-  carros[a].telefono=d;
+  contactos[a].nombres=b;  
+  contactos[a].apellido=c;
+  contactos[a].telefono=d;
   objetoubicacion.ciudad=f;
-  carros[a].ubicacion=objetoubicacion;
+  contactos[a].ubicacion=objetoubicacion;
   console.log("Actualizamos ");
      
   }
@@ -119,12 +81,12 @@ let carros = [
   
   //funcion borra
   function borra(a) {
-    for (const key in carros){
-      if(carros[key].nombres === a) {
+    for (const key in contactos){
+      if(contactos[key].nombres === a) {
       //console.log('contacto ${carros[key].nombre} ${xxx[key].apellido} eliminado');
-      console.log("eliminado "+carros[key].nombres);
+      console.log("eliminado "+contactos[key].nombres);
       
-        carros.splice(key,1);
+      contactos.splice(key,1);
       }
     //carros.pop();
     }
