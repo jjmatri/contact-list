@@ -9,25 +9,31 @@
 */
 
 const arreglo = ["jaime Salinas", "kely Pinto", "Iris Maria", "Yasmina Libreros"];
-console.log(arreglo);
+
+imprimir();
+//console.log(arreglo);
 
 let a, b;
 function agregar(a) {
 
     arreglo.push(a);
+    console.log("funcion Agregar");
     //arreglo.push(b);
 }
 
 console.log(agregar("Karen Perez"));
 
 console.log(arreglo);
-//
+
+  //imprimir();
+
 let pos=0;
 function borra() {
 
     //arreglo.pop();
     arreglo.splice(pos, 1);
-
+    console.log("funcion Borra");
+    
 }
 
 console.log(borra());
@@ -44,5 +50,5 @@ function imprimir() {
 
 }
 
-console.log(imprimir());
+//console.log(imprimir());
 
