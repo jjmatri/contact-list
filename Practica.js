@@ -1,12 +1,8 @@
 /* 📌 
-1)Crea una lista de contactos con datos predefinidos, cada contacto debe contener el nombre y apellido
- como una sola cadena de caracteres ok
-2) Crea una función para añadir un nuevo contacto a una lista  ok
-3) Crea una función para borrar un contacto existente de la lista  ok
-4) Crea una función para imprimir en consola los contactos presentes en la lista ok
-5) Publica tu código en Github, en tu repositorio contact-list crea un branch llamado
- project-1 y compártelo con nosotros.  
-*/
+En tu repositorio de GitHub contact-list, crea un branch llamado review-1
+Completa tu producto de lista de contactos para una revisión en vivo al grupo
+Bonus: Añade una función que permita actualizar un contacto
+Adjunta el link de tu solución en el campo a continuación 📦*/
 
 
 let contactos = [
